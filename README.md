@@ -40,3 +40,13 @@ get 방식으로 요청을 처리할 때는 요청의 결과인 응답 결과가
 진행되어야 하므로 await 구문을 사용하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215240400-1bfa6fac-4969-4a9e-aa25-65e4b90efee1.png)
+
+## 요청의 응답을 콘솔에 뿌리기
+```
+get메서드를 사용해서 요청한 응답을 response 변수에 담고 response의 상태코드가 200일때(요청성공일때)
+response.body 즉 데이터 부분을 콘솔에 print 하도록 하고 실패할 경우 Error를 반환하도록 하였습니다.
+
+메인 함수에서 ApiServices 클래스의 getTodaysToons 메서드를 호출하여 콘솔에서 데이터를 잘 가져오는 지 확인하였습니다.
+이후에 가져온 데이터를 활용하여 앱을 만들어보겠습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215240962-54f49cec-c5a0-4368-84d6-aa17ad12f983.png)
