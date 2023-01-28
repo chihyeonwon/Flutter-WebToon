@@ -31,3 +31,12 @@ flutter pub add http 명령어를 사용하여 설치한 후에 프로젝트에 
 그냥 http의 get메서드를 사용해도 되지만 namespace를 사용하기 위해 
 import 문 뒤에 as http 를 사용하여 http.get의 형식으로 사용하였습니다.
 ```
+
+## 비동기 함수 getTodaysToons 로 데이터 가져오기
+```
+url을 Uri 메서드로 파싱해서 가져온 다음 get 메서드로 넘겨줍니다.
+get 방식으로 요청을 처리할 때는 요청의 결과인 응답 결과가 중요한 데이터이면서 future타입(미래에 완료)을
+반환한다는 것을 알 수 있습니다. 이런 함수는 비동기 함수 async로 만들어서 요청의 결과가 끝난 후에
+진행되어야 하므로 await 구문을 사용하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215240400-1bfa6fac-4969-4a9e-aa25-65e4b90efee1.png)
