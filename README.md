@@ -22,3 +22,12 @@ lib 폴더 안에 services 폴더를 만들고 그 안에 ApiService 클래스�
 또 하나의 today 프로퍼티로 값으로 today를 가지고 있습니다.
 ```
 baseUrl = [네이버 웹툰 Unofficial API](https://webtoon-crawler.nomadcoders.workers.dev/)
+
+## 필요한 패키지(http) 추가
+```
+서버에서 데이터를 가져오기 위해서는 http 라이브러리 설치가 필요합니다.
+flutter pub add http 명령어를 사용하여 설치한 후에 프로젝트에 사용하였습니다.
+
+그냥 http의 get메서드를 사용해도 되지만 namespace를 사용하기 위해 
+import 문 뒤에 as http 를 사용하여 http.get의 형식으로 사용하였습니다.
+```
