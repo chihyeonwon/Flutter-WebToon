@@ -14,3 +14,11 @@ screens 폴더 안에 화면의 위젯들을 보여주는 home_screen.dart 파�
 텍스트는 오늘의 웹툰을 작성하고 폰트크기를 24로 지정하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215239472-96d910a7-6e45-4c06-ae5b-0cd9c7b7bd37.png)
+
+## 데이터 가져오기 (Data Fetching)
+```
+lib 폴더 안에 services 폴더를 만들고 그 안에 ApiService 클래스를 만들어줍니다.
+이 클래스는 baseUrl 프로퍼티를 가지고 있고 값으로 https://webtoon-crawler.nomadcoders.workers.dev/ url을 가집니다.
+또 하나의 today 프로퍼티로 값으로 today를 가지고 있습니다.
+```
+baseUrl = [네이버 웹툰 Unofficial API](https://webtoon-crawler.nomadcoders.workers.dev/)
