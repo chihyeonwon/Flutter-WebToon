@@ -4,10 +4,10 @@ import 'dart:convert'; // jsonDecode 메서드를 사용하기 위함
 import '../models/webtoon_model.dart';
 
 class ApiService {
-  final String baseUrl = "https://webtoon-crawler.nomadcoders.workers.dev";
-  final String today = "today";
+  static const String baseUrl = "https://webtoon-crawler.nomadcoders.workers.dev";
+  static const String today static = "today";
 
-    Future<List<WebtoonModel>> getTodaysToons() async {
+    static Future<List<WebtoonModel>> getTodaysToons() async {
       List<WebtoonModel> webtoonInstances = [];
     final url = Uri.parse('$baseUrl/$today'); // 요청을 보낼 url
     final response = await http.get(url); // api에 get 방식으로 요청
