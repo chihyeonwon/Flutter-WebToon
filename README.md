@@ -77,5 +77,13 @@ jsonDecode를 사용해서 문자열을 JSON으로 변환해 주었습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215301606-305e8558-6ae6-4d27-96b5-0c40822efdad.png)
 
+## 화면 위젯 수정
+```
+위젯의 화면을 나타내는 home_screen.dart 파일의 stless 클래스를 stateful 클래스로 바꾼 뒤
+웹툰을 받아오는 함수를 비동기 함수 안에 넣고 initState()에서 호출하도록 하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215302220-7e1c6dbe-148b-4dff-b151-f756e16e77f0.png)
+
+
 
 
