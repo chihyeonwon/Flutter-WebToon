@@ -3,7 +3,6 @@ import 'screens/home_screen.dart';
 import 'services/api_service.dart';
 
 void main() {
-  ApiService().getTodaysToons();
   runApp(const MyApp());
 }
 
