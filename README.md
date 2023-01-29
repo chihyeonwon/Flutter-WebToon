@@ -71,4 +71,10 @@ jsonDecode를 사용해서 문자열을 JSON으로 변환해 주었습니다.
 ![image](https://user-images.githubusercontent.com/58906858/215300215-06b84453-67fd-4777-96b3-528e3544203b.png)
 ![image](https://user-images.githubusercontent.com/58906858/215300243-b9a95d24-d74d-4a1e-a0f7-bee8700400c8.png)
 
+## 리스트 생성하고 Json 데이터 넣기
+```
+빈 리스트 webtoonInstances를 생성하고 add 메서드로 webtoon Json 데이터를 넣어준 뒤 return 합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215300411-8f2a8846-7b68-493d-a749-0fd465734892.png)
+
 
