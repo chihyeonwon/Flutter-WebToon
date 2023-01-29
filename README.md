@@ -61,3 +61,14 @@ jsonDecode를 사용해서 문자열을 JSON으로 변환해 주었습니다.
 콘솔에 웹툰을 하나씩 출력합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215299805-2286e3ec-7ad8-43ac-8e26-35c778a18425.png)
+
+## named Constructor로 title, thumb, id를 Json의 title, thumb, id로 변환
+```
+이름 생성자로 fromJson이라는 생성자를 만든 후에 각 문자열을 Json의 데이터와 대응시킵니다.
+이렇게 생성된 모델을 toon 변수에 담고 title을 콘솔에 출력하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215300224-61e1aeb9-8019-42e2-a5cf-0b11d1ff4581.png)
+![image](https://user-images.githubusercontent.com/58906858/215300215-06b84453-67fd-4777-96b3-528e3544203b.png)
+![image](https://user-images.githubusercontent.com/58906858/215300243-b9a95d24-d74d-4a1e-a0f7-bee8700400c8.png)
+
+
