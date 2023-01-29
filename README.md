@@ -84,6 +84,22 @@ jsonDecode를 사용해서 문자열을 JSON으로 변환해 주었습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215302220-7e1c6dbe-148b-4dff-b151-f756e16e77f0.png)
 
+## futureBuilder를 사용하여 데이터 가져오기
+```
+state를 사용해서 데이터를 가져오는 방법은 선호되지 않기에 home_screen.dart 파일의
+stateful클래스를 다시 stless로 변경 후 위에서 작업한 initState()와 비동기 함수는 지워줍니다.
 
+후에 webtoons를 통해서 getTodaysToons함수를 호출한 다음 
+Scaffold의 바디에 FutureBuilder를 사용합니다.
+FutureBuilder는 future와 builder를 사용합니다.
+future는 위에서 만든 webtoons를 주고
+builder는 context와 snapshot을 가집니다.
+snapshot이란 future 데이터의 상태를 나타내고 
+hasData 메서드를 통해서 데이터의 유무 상태를 조작할 수 있습니다.(isLoading 조작 x)
+
+state를 사용하기보다 futureBuilder를 사용하면 setState, isLoading 조작이 필요업다는 장점이 있습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215302741-0d32ba51-e57c-4de0-b4df-d063ae9755d2.png)
+![image](https://user-images.githubusercontent.com/58906858/215302862-45b15572-803d-45c1-9498-a825d9bbcb23.png)
 
 
