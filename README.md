@@ -50,3 +50,14 @@ response.body 즉 데이터 부분을 콘솔에 print 하도록 하고 실패할
 이후에 가져온 데이터를 활용하여 앱을 만들어보겠습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215240962-54f49cec-c5a0-4368-84d6-aa17ad12f983.png)
+
+## JSON데이터를 클래스 리스트로 변환하기
+```
+lib 아래 models 폴더를 만들고 webtoon_model.dart 파일을 생성합니다.
+요청에 대한 응답의 키 문자열은 title, thumb, id 세 가지 입니다.
+
+응답의 문자열을 JSON 데이터로 먼저 변환해줘야 합니다.
+jsonDecode를 사용해서 문자열을 JSON으로 변환해 주었습니다.
+콘솔에 웹툰을 하나씩 출력합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215299805-2286e3ec-7ad8-43ac-8e26-35c778a18425.png)
