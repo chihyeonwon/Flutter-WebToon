@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../models/webtoon_model.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
