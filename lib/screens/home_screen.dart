@@ -9,6 +9,12 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
+  List<WebtoonModel> webtoons = [];
+  bool isLoading = true;
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
