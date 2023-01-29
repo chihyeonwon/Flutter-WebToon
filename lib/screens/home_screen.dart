@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
           if(snapshot.hasData) {
             return const Text("There is data!");
           }
-          return Text("Loading....");
+          return const Text("Loading....");
         },
       ),
     );
