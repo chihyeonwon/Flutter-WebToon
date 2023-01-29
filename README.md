@@ -75,6 +75,7 @@ jsonDecode를 사용해서 문자열을 JSON으로 변환해 주었습니다.
 ```
 빈 리스트 webtoonInstances를 생성하고 add 메서드로 webtoon Json 데이터를 넣어준 뒤 return 합니다.
 ```
-![image](https://user-images.githubusercontent.com/58906858/215300411-8f2a8846-7b68-493d-a749-0fd465734892.png)
+![image](https://user-images.githubusercontent.com/58906858/215301606-305e8558-6ae6-4d27-96b5-0c40822efdad.png)
+
 
 
