@@ -5,7 +5,7 @@ import '../models/webtoon_model.dart';
 
 class ApiService {
   static const String baseUrl = "https://webtoon-crawler.nomadcoders.workers.dev";
-  static const String today static = "today";
+  static const String today = "today";
 
     static Future<List<WebtoonModel>> getTodaysToons() async {
       List<WebtoonModel> webtoonInstances = [];
