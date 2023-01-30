@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                      return Text(webtoon.title);
                 },
                 separatorBuilder: (context, index) { // data 간 구분자 설정
-                  return const SizedBox(width:20); // 너비 20의 Sizedbox로 구분
+                  return const SizedBox(width:40); // 너비 20의 Sizedbox로 구분
                 }
             ),
           )
