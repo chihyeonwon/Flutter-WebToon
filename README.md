@@ -102,4 +102,8 @@ state를 사용하기보다 futureBuilder를 사용하면 setState, isLoading �
 ![image](https://user-images.githubusercontent.com/58906858/215302741-0d32ba51-e57c-4de0-b4df-d063ae9755d2.png)
 ![image](https://user-images.githubusercontent.com/58906858/215302862-45b15572-803d-45c1-9498-a825d9bbcb23.png)
 
-
+## 로딩 중 기능 구현
+```
+데이터를 가져올 때 (hasData ? false일 때) 로딩 Indicator가 나타나도록 수정하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215406265-523de24d-292a-4794-88b2-6962abd4269d.png)
