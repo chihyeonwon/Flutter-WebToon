@@ -27,7 +27,9 @@ class HomeScreen extends StatelessWidget {
           if(snapshot.hasData) {
             return const Text("There is data!");
           }
-          return const Text("Loading....");
+          return Center(
+            child:CircularProgressIndicator(),
+          );
         },
       ),
     );
