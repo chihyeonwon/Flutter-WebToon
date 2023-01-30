@@ -27,6 +27,9 @@ class HomeScreen extends StatelessWidget {
           if(snapshot.hasData) {
             return Column(
               children:[
+                SizedBox(
+                  height:50,
+                ),
                 Expanded(
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal, // 스크롤 수평으로
