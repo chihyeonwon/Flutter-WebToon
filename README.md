@@ -114,3 +114,15 @@ state를 사용하기보다 futureBuilder를 사용하면 setState, isLoading �
 중 웹툰의 제목들을 하나씩 나열하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215407432-7f6cd6f2-e94a-4147-aa3b-353f4682fdf8.png)
+
+## 좀 더 최적화 된 ListView.builder로 구현
+```
+ListView를 사용하면 한 번에 데이터를 다 로딩하기 때문에 메모리 사용 측면에서 굉장히 부정적인 영향을 끼칩니다.
+따라서 좀 더 전문적이고 많은 아이템에 최적화된 ListView.builder를 사용하였습니다.
+
+ListView를 사용하면 화면에 보이는 아이템만 로딩해서 보여주는 itemBuilder를 사용할 수 있고 
+메모리의 재활용을 하거나 낭비를 줄일 수 있습니다.
+
+데이터를 인덱스 번호에 매칭해서 화면에 보이는 아이템만 로딩합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215409841-e950ef0d-fb5e-4bbf-b58c-2fca157d4ec7.png)
