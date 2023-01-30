@@ -126,3 +126,11 @@ ListView를 사용하면 화면에 보이는 아이템만 로딩해서 보여주
 데이터를 인덱스 번호에 매칭해서 화면에 보이는 아이템만 로딩합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215409841-e950ef0d-fb5e-4bbf-b58c-2fca157d4ec7.png)
+
+## ListView.separated로 데이터 간 구분자 생성하기
+```
+ListView.builder에서 builder를 separated로 수정합니다.
+separatedBuilder를 통해 데이터 간 구분자를 설정할 수 있습니다.
+너비 20의 sizebox를 구분자로 설정하였습니다. 
+```
+![image](https://user-images.githubusercontent.com/58906858/215411209-fe010008-f734-43c3-9eb8-0d22d8b17f40.png)
