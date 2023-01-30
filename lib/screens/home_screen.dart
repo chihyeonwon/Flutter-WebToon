@@ -39,6 +39,10 @@ class HomeScreen extends StatelessWidget {
                      return Column(
                        children: [
                          Container(
+                           clipBehavior:Clip.hardEdge, // 자식의 부모 영역 침범을 제어
+                           decoration: BoxDecoration(
+                               borderRadius:BorderRadius.circular(20),
+                           ),
                            width: 250,
                              child: Image.network(webtoon.thumb)
                          ),
