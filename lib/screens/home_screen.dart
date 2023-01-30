@@ -36,7 +36,11 @@ class HomeScreen extends StatelessWidget {
                      itemCount: snapshot.data!.length,
                      itemBuilder:(context, index) { // 화면에 보여지는 부분의 아이템을 정할 수 있음
                     var webtoon = snapshot.data![index];
-                     return Text(webtoon.title);
+                     return Column(
+                       children: [
+                         Text(webtoon.title),
+                       ],
+                     );
                 },
                 separatorBuilder: (context, index) { // data 간 구분자 설정
                   return const SizedBox(width:40); // 너비 20의 Sizedbox로 구분
