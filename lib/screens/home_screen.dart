@@ -38,6 +38,10 @@ class HomeScreen extends StatelessWidget {
                     var webtoon = snapshot.data![index];
                      return Column(
                        children: [
+                         SizedBox(
+                           width: 250,
+                             child: Image.network(webtoon.thumb)
+                         ),
                          Text(webtoon.title),
                        ],
                      );
