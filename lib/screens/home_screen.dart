@@ -42,7 +42,10 @@ class HomeScreen extends StatelessWidget {
                            width: 250,
                              child: Image.network(webtoon.thumb)
                          ),
-                         Text(webtoon.title),
+                         Text(webtoon.title,
+                         style:TextStyle(
+                           fontSize:22,
+                         )),
                        ],
                      );
                 },
