@@ -42,8 +42,11 @@ class HomeScreen extends StatelessWidget {
                            width: 250,
                              child: Image.network(webtoon.thumb)
                          ),
+                         const SizedBox(
+                           height:10,
+                         ),
                          Text(webtoon.title,
-                         style:TextStyle(
+                         style:const TextStyle(
                            fontSize:22,
                          )),
                        ],
