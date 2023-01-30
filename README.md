@@ -107,3 +107,10 @@ state를 사용하기보다 futureBuilder를 사용하면 setState, isLoading �
 데이터를 가져올 때 (hasData ? false일 때) 로딩 Indicator가 나타나도록 수정하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215406265-523de24d-292a-4794-88b2-6962abd4269d.png)
+
+## 웹툰의 제목을 ListView로 구현
+```
+여러 항목들을 나열하기 위해서는 ListView 위젯을 사용합니다. for 구문을 사용해서 future의 데이터
+중 웹툰의 제목들을 하나씩 나열하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215407432-7f6cd6f2-e94a-4147-aa3b-353f4682fdf8.png)
