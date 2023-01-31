@@ -34,6 +34,7 @@ class HomeScreen extends StatelessWidget {
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal, // 스크롤 수평으로
                      itemCount: snapshot.data!.length,
+                     padding: EdgeInsets.symmetric(vertical:10, horizontal:20,),
                      itemBuilder:(context, index) { // 화면에 보여지는 부분의 아이템을 정할 수 있음
                     var webtoon = snapshot.data![index];
                      return Column(
