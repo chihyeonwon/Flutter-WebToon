@@ -180,3 +180,14 @@ MaterialRoute를 PageRouteBuilder로 수정하고 fullscreenDialog 옵션을 주
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215648611-eb3ec9be-64ff-44d5-aaaf-0b5955fdbc31.png)
 
+## Hero 위젯으로 홈의 이미지와 상세 페이지의 이미지 연결 애니메이션 주기
+```
+두 개의 화면의 위젯을 하나의 같은 태그로 연결하면 이미지가 연결되어 떠다니듯이 이동합니다.
+
+Home 스크린의 Container를 Hero 위젯으로 감싸고 tag 값으로 id를 주었습니다.
+마찬가지로 detail 스크린의 Container를 Hero 위젯으로 감싸고 tag 값으로 id를 주었습니다.
+이렇게 하면 두 개의 이미지가 서로 연결되어 화면 전환이 일어날 때 위젯이 마치 연결된 듯한 움직임을
+보여줄 수 있습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215650032-b426f747-0ffe-41c7-a385-32d3ca5c5c7d.png)
+
