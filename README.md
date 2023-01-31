@@ -144,3 +144,9 @@ Container 안에 Image.network(url) (url:webtoon.thumb에 있습니다)를 사�
 웹툰 이미지를 추가해주고 제목과의 간격을 SizedBox로 조정합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215418082-ee0fc9c1-c48b-4503-915e-92612f2082a8.png)
+
+## 썸네일 이미지에 그림자 추가하기
+```
+불투명도 0.5 , 15크기의 범위를 가지는 그림자를 썸네일에 추가하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215636722-e1e9ddee-7def-41f8-94ab-bffb1c11c220.png)
