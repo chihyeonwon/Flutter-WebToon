@@ -150,3 +150,11 @@ Container 안에 Image.network(url) (url:webtoon.thumb에 있습니다)를 사�
 불투명도 0.5 , 15크기의 범위를 가지는 그림자를 썸네일에 추가하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215636722-e1e9ddee-7def-41f8-94ab-bffb1c11c220.png)
+
+## 웹툰 썸네일을 클릭했을 때 보여지는 상세 페이지 추가
+```
+웹툰 썸네일을 리턴하는 부분을 따로 detail_screen.dart파일로 분리한 후에
+Container를 GestureDectector로 감싸준 뒤 onTap에서 Navigator를 작성하였습니다.
+어떤 웹툰인지 구별하기 위해서 생성자로 title, thumb, id의 정보를 넘겨주도록 하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215641356-71ecc2b8-dfae-4f39-bb8a-623704dd9ac9.png)
