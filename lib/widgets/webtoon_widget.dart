@@ -39,6 +39,7 @@ class Webtoon extends StatelessWidget {
       child: Column(
         children: [
           Hero(
+            tag: id,
             child: Container(
                 clipBehavior:Clip.hardEdge, // 자식의 부모 영역 침범을 제어
                 decoration: BoxDecoration(
