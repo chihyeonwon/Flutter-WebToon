@@ -134,3 +134,13 @@ separatedBuilder를 통해 데이터 간 구분자를 설정할 수 있습니다
 너비 20의 sizebox를 구분자로 설정하였습니다. 
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215411209-fe010008-f734-43c3-9eb8-0d22d8b17f40.png)
+
+## 웹툰 썸네일 이미지 넣기
+```
+썸네일 이미지를 넣을 공간을 만들기 위해서 ListView를 Expanded로 감싸고 다시 Column으로 감싸줍니다.
+Container를 이용해 공간을 만듭니다. SizedBox를 사용할 때모다 decoration로 옵션을 주어서 더 꾸며줄 수 있습니다.
+Container 안에 Image.network(url) (url:webtoon.thumb에 있습니다)를 사용해서 이미지를 추가해줍니다.
+
+웹툰 이미지를 추가해주고 제목과의 간격을 SizedBox로 조정합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215418082-ee0fc9c1-c48b-4503-915e-92612f2082a8.png)
