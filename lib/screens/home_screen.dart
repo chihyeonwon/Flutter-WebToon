@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/webtoon_model.dart';
 import '../services/api_service.dart';
+import '../widgets/webtoon_widget.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -37,32 +38,7 @@ class HomeScreen extends StatelessWidget {
                      padding: EdgeInsets.symmetric(vertical:10, horizontal:20,),
                      itemBuilder:(context, index) { // 화면에 보여지는 부분의 아이템을 정할 수 있음
                     var webtoon = snapshot.data![index];
-                     return Column(
-                       children: [
-                         Container(
-                           clipBehavior:Clip.hardEdge, // 자식의 부모 영역 침범을 제어
-                           decoration: BoxDecoration(
-                               borderRadius:BorderRadius.circular(20),
-                             boxShadow: [
-                               BoxShadow(
-                                 blurRadius:15, // 그림자의 범위 지정
-                                 offset: const Offset(10, 10), // 그림자의 위치 지정
-                                 color:Colors.black.withOpacity(0.5),
-                               )
-                             ]
-                           ),
-                           width: 250,
-                             child: Image.network(webtoon.thumb)
-                         ),
-                         const SizedBox(
-                           height:10,
-                         ),
-                         Text(webtoon.title,
-                         style:const TextStyle(
-                           fontSize:22,
-                         )),
-                       ],
-                     );
+                     return Webtoon(title:webtoon.title, thumb:webtoon.thumb, id:webtoon.id);
                 },
                 separatorBuilder: (context, index) { // data 간 구분자 설정
                   return const SizedBox(width:40); // 너비 20의 Sizedbox로 구분
