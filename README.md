@@ -170,3 +170,13 @@ AppBar는 전체적인 통일감을 주기 위해서 homescreen 에서 사용한
 맨 앞 웹툰의 썸네일을 클릭한 후 화면을 전환하여 해당하는 웹툰의 상세 페이지로 넘어가도록 구현하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215643753-73907746-ffc3-450a-b671-77780fb15a68.png)
+
+## 상세 페이지 애니메이션 효과 주기
+```
+버튼을 클릭했을 때 route의 종류에 따라 옵션을 달리하여 다양한 애니메이션 효과를 줄 수 있습니다.
+MaterialRoute를 PageRouteBuilder로 수정하고 fullscreenDialog 옵션을 주어서 애니메이션 효과를 주었습니다.
+
+썸네일 이미지를 클릭하면 아래에서 위로 페이지가 날라오면서 AppBar의 뒤로가기 버튼이 X 로 바뀝니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215648611-eb3ec9be-64ff-44d5-aaaf-0b5955fdbc31.png)
+
