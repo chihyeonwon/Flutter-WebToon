@@ -192,6 +192,7 @@ Home 스크린의 Container를 Hero 위젯으로 감싸고 tag 값으로 id를 �
 ![image](https://user-images.githubusercontent.com/58906858/215650032-b426f747-0ffe-41c7-a385-32d3ca5c5c7d.png)
 
 ## 상세 페이지 모델 생성
+[상세페이지모델 url](https://webtoon-crawler.nomadcoders.workers.dev/790713)
 ```
 상세 페이지에 들어갈 내용을 official API URL에 Webtoon의 ID를 붙인 url에서 가져옵니다.
 해당 Webtoon에 대한 디테일한 정보(title, about, genre, age, thumb)를 가지고 있습니다.
@@ -209,3 +210,11 @@ Official Api url/id 에서 title, about, genre, age, thumb에 대한 정보를 j
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215942578-196d524c-e825-4b91-b4fd-5cafd7974346.png)
 
+## 최근 에피소드의 정보 모델 생성
+[최근 에피소드 모델 url](https://webtoon-crawler.nomadcoders.workers.dev/790713/episodes)
+```
+official API URL에 Webtoon의 ID 뒤에 episodes를 붙이면 최근 에피소드의 정보를 받아올 수 있습니다.
+정보는 id, title, rating, date(id, 제목, 평점, 날짜)를 가지고 있습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215943345-2fa62e26-2ff9-43a6-a7bd-b6c6f0e737c9.png)
+![image](https://user-images.githubusercontent.com/58906858/215943314-c32bfb37-303a-4bb5-8ea8-68037d23f0ce.png)
