@@ -218,3 +218,9 @@ official API URL에 Webtoon의 ID 뒤에 episodes를 붙이면 최근 에피소�
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215943345-2fa62e26-2ff9-43a6-a7bd-b6c6f0e737c9.png)
 ![image](https://user-images.githubusercontent.com/58906858/215943314-c32bfb37-303a-4bb5-8ea8-68037d23f0ce.png)
+
+## 최근 에피소드 데이터 가져오기(url/id/episodes)
+```
+url의 정보가 리스트이기 때문에 리스트를 리턴하는 getLatestEpisodesModel 함수를 작성하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215946211-576e5ab9-6c1b-4c29-82e0-076fc68c4a23.png)
