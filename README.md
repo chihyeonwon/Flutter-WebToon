@@ -201,3 +201,11 @@ Home 스크린의 Container를 Hero 위젯으로 감싸고 tag 값으로 id를 �
 ![image](https://user-images.githubusercontent.com/58906858/215941325-34bf8f76-e662-4817-98b6-aa961dbb92d5.png)
 ![image](https://user-images.githubusercontent.com/58906858/215941766-c3f9642b-cb20-475a-b770-d133335d8f21.png)
 
+## 상세 페이지 데이터 가져오기(url/id)
+```
+Official Api url/id 에서 title, about, genre, age, thumb에 대한 정보를 json 형식의 데이터에서
+프로젝트에 적용하기 위해서 전에 했던 방식처럼 Uri.parse, jsonDecode를 사용해서 데이터를 
+가지고 옵니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215942578-196d524c-e825-4b91-b4fd-5cafd7974346.png)
+
