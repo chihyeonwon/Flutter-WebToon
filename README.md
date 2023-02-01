@@ -234,3 +234,10 @@ detail_screen의 화면을 stless에서 stful 위젯으로 바꾸어 줍니다.
 initState()를 사용하여 다른 클래스의 id를 참조하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215949949-b872aa73-aae8-4f7d-8324-d5c71777c9a8.png)
+
+## 상세 페이지에서 getLatestEpisodesById 함수 호출하기
+```
+getLatestEpisodeById 함수 역시 late와 initState()를 사용하여 다른 클래스의 id를 참조한 뒤에
+호출하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215951152-212a97f9-b47c-40c0-b314-2b6c098fc7ad.png)
