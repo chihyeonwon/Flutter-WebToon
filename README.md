@@ -224,3 +224,13 @@ official API URL에 Webtoon의 ID 뒤에 episodes를 붙이면 최근 에피소�
 url의 정보가 리스트이기 때문에 리스트를 리턴하는 getLatestEpisodesModel 함수를 작성하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215946211-576e5ab9-6c1b-4c29-82e0-076fc68c4a23.png)
+
+## 상세 페이지에서 getToonById 함수 호출하기
+```
+앞서 만든 apiurl/id 에서 데이터를 가져오는 함수인 getToonById를 호출합니다.
+detail_screen의 화면을 stless에서 stful 위젯으로 바꾸어 줍니다.
+
+생성자에서 다른 클래스의 id를 참조하는 것은 불가능하기 때문에 late와
+initState()를 사용하여 다른 클래스의 id를 참조하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215949949-b872aa73-aae8-4f7d-8324-d5c71777c9a8.png)
