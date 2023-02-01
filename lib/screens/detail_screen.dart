@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../models/webtoon_detail_model.dart';
+import '../services/api_service.dart';
+
 class DetailScreen extends StatelessWidget {
   final String title, thumb, id;
+
+  Future<WebtoonDetailModel> webtoon = ApiService.getToonById(id);
 
   const DetailScreen({
     super.key,
