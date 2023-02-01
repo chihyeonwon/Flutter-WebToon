@@ -2,6 +2,7 @@ import 'package:http/http.dart' as http; // namespace를 http로 지정
 import 'dart:convert'; // jsonDecode 메서드를 사용하기 위함
 
 import '../models/webtoon_model.dart';
+import '../models/webtoon_detail_model.dart';
 
 class ApiService {
   static const String baseUrl = "https://webtoon-crawler.nomadcoders.workers.dev";
@@ -20,5 +21,15 @@ class ApiService {
       return webtoonInstances;
     }
     throw Error(); // 아니라면 에러 발생
+  }
+
+  static Future<WebtoonDetailModel> getToonById(String id) async {
+      final url = Uri.parse("$baseUrl/$id");
+      final response = await http.get(url);
+      if(response.statusCode == 200) {
+        final webtoon = jsonDecode(response.body);
+        return WebtoonDetailModel.fromJson(webtoon);
+      }
+      throw Error();
   }
 }
