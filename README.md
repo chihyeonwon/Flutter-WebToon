@@ -191,3 +191,13 @@ Home 스크린의 Container를 Hero 위젯으로 감싸고 tag 값으로 id를 �
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215650032-b426f747-0ffe-41c7-a385-32d3ca5c5c7d.png)
 
+## 상세 페이지 모델 생성
+```
+상세 페이지에 들어갈 내용을 official API URL에 Webtoon의 ID를 붙인 url에서 가져옵니다.
+해당 Webtoon에 대한 디테일한 정보(title, about, genre, age, thumb)를 가지고 있습니다.
+
+해당 정보를 가지는 모델(클래스)를 models/webtoon_detail_model.dart 파일에 작성합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/215941325-34bf8f76-e662-4817-98b6-aa961dbb92d5.png)
+![image](https://user-images.githubusercontent.com/58906858/215941766-c3f9642b-cb20-475a-b770-d133335d8f21.png)
+
