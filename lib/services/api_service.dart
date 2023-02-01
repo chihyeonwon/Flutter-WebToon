@@ -3,6 +3,7 @@ import 'dart:convert'; // jsonDecode 메서드를 사용하기 위함
 
 import '../models/webtoon_model.dart';
 import '../models/webtoon_detail_model.dart';
+import '../models/webtoon_episode_model.dart';
 
 class ApiService {
   static const String baseUrl = "https://webtoon-crawler.nomadcoders.workers.dev";
@@ -31,5 +32,19 @@ class ApiService {
         return WebtoonDetailModel.fromJson(webtoon);
       }
       throw Error();
+  }
+
+  static Future<List<WebtoonEpisodeModel>> getLatestEpisodesById(String id) async {
+      List<WebtoonEpisodeModel> episodesInstances = [];
+    final url = Uri.parse("$baseUrl/$id/episodes");
+    final response = await http.get(url);
+    if(response.statusCode == 200) {
+      final episodes = jsonDecode(response.body);
+      for(var episode in episodes) {
+        episodesInstances.add(WebtoonEpisodeModel.fromJson(episode));
+      }
+      return episodesInstances;
+    }
+    throw Error();
   }
 }
