@@ -107,7 +107,7 @@ class _DetailScreenState extends State<DetailScreen> {
               }
             ),
             const SizedBox(
-              height:50,
+              height:25,
             ),
             FutureBuilder(
                 future: episodes,
