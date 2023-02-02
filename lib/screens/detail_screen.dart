@@ -66,7 +66,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           )
                         ]
                     ),
-                    width: 250,
+                    width:200,
                     child: Image.network(widget.thumb)
                 ),
               ),
