@@ -267,4 +267,14 @@ FutureBuilder를 사용해서 webtoon(apiurl/id)의 about 프로퍼티의 데이
 ![image](https://user-images.githubusercontent.com/58906858/216231823-aef728b0-577c-4d1f-9a2a-478f6b4202d6.png)
 ![image](https://user-images.githubusercontent.com/58906858/216231838-b235b2e8-aef1-4d33-abaa-6c460db7b27e.png)
 
+## 상세 페이지에 에피소드 ui 추가하기
+```
+에피소드의 Future 타입은 리스트가 반환되는 것을 알 수 있습니다.
+리스트의 크기를 모르고 최적화가 중요 리스트라면 ListView나 ListView.builder를 사용하지만
+리스트의 크기를 10개로 알고 있고 그 크기가 크지 않기에 Column을 사용합니다.
+
+에피소드를 버튼처럼 표현하기 위해 Container와 Row를 사용하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216235477-70897070-0249-4dfb-a4bc-cfd61f2fbcce.png)
+![image](https://user-images.githubusercontent.com/58906858/216235567-b7f3aedb-c36f-4f32-8273-33fce2042700.png)
 
