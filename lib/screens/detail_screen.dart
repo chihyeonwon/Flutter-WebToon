@@ -86,8 +86,12 @@ class _DetailScreenState extends State<DetailScreen> {
                       Text(snapshot.data!.about,
                        style: const TextStyle(
                          fontSize: 15
-                       )
-
+                       ),
+                      ),
+                      Text(snapshot.data!.genre,
+                        style: const TextStyle(
+                            fontSize: 15
+                        ),
                       ),
                     ],
                   ),
