@@ -241,3 +241,11 @@ getLatestEpisodeById 함수 역시 late와 initState()를 사용하여 다른 �
 호출하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/215951152-212a97f9-b47c-40c0-b314-2b6c098fc7ad.png)
+
+## 상세 페이지의 웹툰 설명(about) ui 추가하기
+```
+FutureBuilder를 사용해서 webtoon(apiurl/id)의 about 프로퍼티의 데이터를
+텍스트로 출력하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216228776-753974a6-675f-421a-ac1e-4a922e4f3f9a.png)
+![image](https://user-images.githubusercontent.com/58906858/216228787-bfc8f3fb-47a5-4d17-a60d-983bf81bec52.png)
