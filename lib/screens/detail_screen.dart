@@ -46,7 +46,7 @@ class _DetailScreenState extends State<DetailScreen> {
         ),
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height:50,
           ),
           Row(
@@ -71,6 +71,9 @@ class _DetailScreenState extends State<DetailScreen> {
                 ),
               ),
             ],
+          ),
+          const SizedBox(
+            height:25,
           ),
           FutureBuilder(
             future:webtoon,
