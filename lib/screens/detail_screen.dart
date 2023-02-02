@@ -79,7 +79,10 @@ class _DetailScreenState extends State<DetailScreen> {
             future:webtoon,
             builder:(context, snapshot) {
               if(snapshot.hasData) {
-                return Text(snapshot.data!.about);
+                return Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 50),
+                  child: Text(snapshot.data!.about),
+                );
               }
               return Text("...");
             }
