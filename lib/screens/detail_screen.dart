@@ -44,92 +44,95 @@ class _DetailScreenState extends State<DetailScreen> {
           style:const TextStyle(fontSize:24,),
         ),
         ),
-      body: ListView(
-        children:[
-          Column(
-          children: [
-            const SizedBox(
-              height:50,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Hero(
-                  tag:widget.id,
-                  child: Container(
-                      clipBehavior:Clip.hardEdge, // 자식의 부모 영역 침범을 제어
-                      decoration: BoxDecoration(
-                          borderRadius:BorderRadius.circular(20),
-                          boxShadow: [
-                            BoxShadow(
-                              blurRadius:15, // 그림자의 범위 지정
-                              offset: const Offset(10, 10), // 그림자의 위치 지정
-                              color:Colors.black.withOpacity(0.5),
-                            )
-                          ]
-                      ),
-                      width:200,
-                      child: Image.network(widget.thumb)
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height:25,
-            ),
-            FutureBuilder(
-              future:webtoon,
-              builder:(context, snapshot) {
-                if(snapshot.hasData) {
-                  return Column(
-                    crossAxisAlignment:CrossAxisAlignment.center,
-                    children: [
-                      Text(snapshot.data!.about,
-                       style: const TextStyle(
-                         fontSize: 15
-                       ),
-                      ),
-                      const SizedBox(
-                        height: 15,
-                      ),
-                      Text('${snapshot.data!.genre} / ${snapshot.data!.age}',
-                        style: const TextStyle(
-                            fontSize: 15
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 50),
+        child: ListView(
+          children:[
+            Column(
+            children: [
+              const SizedBox(
+                height:50,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Hero(
+                    tag:widget.id,
+                    child: Container(
+                        clipBehavior:Clip.hardEdge, // 자식의 부모 영역 침범을 제어
+                        decoration: BoxDecoration(
+                            borderRadius:BorderRadius.circular(20),
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius:15, // 그림자의 범위 지정
+                                offset: const Offset(10, 10), // 그림자의 위치 지정
+                                color:Colors.black.withOpacity(0.5),
+                              )
+                            ]
                         ),
-                      ),
-                    ],
-                  );
-                }
-                return Text("...");
-              }
-            ),
-            const SizedBox(
-              height:25,
-            ),
-            FutureBuilder(
-                future: episodes,
-                builder: (context, snapshot) {
+                        width:200,
+                        child: Image.network(widget.thumb)
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height:25,
+              ),
+              FutureBuilder(
+                future:webtoon,
+                builder:(context, snapshot) {
                   if(snapshot.hasData) {
                     return Column(
+                      crossAxisAlignment:CrossAxisAlignment.center,
                       children: [
-                        for(var episode in snapshot.data!)
-                          Container(
-                            child: Row(
-                              children:[
-                                Text(episode.title),
-                                const Icon(Icons.chevron_right_rounded),
-                              ]
-                            )
-                          )
+                        Text(snapshot.data!.about,
+                         style: const TextStyle(
+                           fontSize: 15
+                         ),
+                        ),
+                        const SizedBox(
+                          height: 15,
+                        ),
+                        Text('${snapshot.data!.genre} / ${snapshot.data!.age}',
+                          style: const TextStyle(
+                              fontSize: 15
+                          ),
+                        ),
                       ],
                     );
                   }
-                  return Container();
+                  return Text("...");
                 }
-            )
+              ),
+              const SizedBox(
+                height:25,
+              ),
+              FutureBuilder(
+                  future: episodes,
+                  builder: (context, snapshot) {
+                    if(snapshot.hasData) {
+                      return Column(
+                        children: [
+                          for(var episode in snapshot.data!)
+                            Container(
+                              child: Row(
+                                children:[
+                                  Text(episode.title),
+                                  const Icon(Icons.chevron_right_rounded),
+                                ]
+                              )
+                            )
+                        ],
+                      );
+                    }
+                    return Container();
+                  }
+              )
+            ],
+          ),
           ],
         ),
-        ],
       )
     );
   }
