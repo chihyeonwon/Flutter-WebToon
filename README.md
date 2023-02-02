@@ -258,3 +258,13 @@ FutureBuilder를 사용해서 webtoon(apiurl/id)의 about 프로퍼티의 데이
 ![image](https://user-images.githubusercontent.com/58906858/216231096-c39403e1-220c-4fa5-9a23-28761e443088.png)
 ![image](https://user-images.githubusercontent.com/58906858/216231081-118dbbb6-bdb6-470d-96c5-4deb0efe138b.png)
 
+## 문자열 바인딩(Text interpolation)으로 장르 옆에 나이 출력하기
+```
+문자열 바인딩(Text interpolation) 이란 ${Text}의 형식으로 여러 개의 문자열을
+이어서 출력할 수 있게 도와줍니다.
+문자열 바인딩을 사용해서 장르 옆에 나이를 출력하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216231823-aef728b0-577c-4d1f-9a2a-478f6b4202d6.png)
+![image](https://user-images.githubusercontent.com/58906858/216231838-b235b2e8-aef1-4d33-abaa-6c460db7b27e.png)
+
+
