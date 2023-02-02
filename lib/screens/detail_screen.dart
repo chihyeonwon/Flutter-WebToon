@@ -82,6 +82,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 50),
                   child: Column(
+                    crossAxisAlignment:CrossAxisAlignment.center,
                     children: [
                       Text(snapshot.data!.about,
                        style: const TextStyle(
