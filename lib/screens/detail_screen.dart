@@ -88,6 +88,9 @@ class _DetailScreenState extends State<DetailScreen> {
                          fontSize: 15
                        ),
                       ),
+                      const SizedBox(
+                        height: 15,
+                      ),
                       Text(snapshot.data!.genre,
                         style: const TextStyle(
                             fontSize: 15
