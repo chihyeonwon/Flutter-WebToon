@@ -116,7 +116,14 @@ class _DetailScreenState extends State<DetailScreen> {
                     return Column(
                       children: [
                         for(var episode in snapshot.data!)
-                          Text(episode.title)
+                          Container(
+                            child: Row(
+                              children:[
+                                Text(episode.title),
+                                const Icon(Icons.chevron_right_rounded),
+                              ]
+                            )
+                          )
                       ],
                     );
                   }
