@@ -249,3 +249,12 @@ FutureBuilder를 사용해서 webtoon(apiurl/id)의 about 프로퍼티의 데이
 ```
 ![image](https://user-images.githubusercontent.com/58906858/216228776-753974a6-675f-421a-ac1e-4a922e4f3f9a.png)
 ![image](https://user-images.githubusercontent.com/58906858/216228787-bfc8f3fb-47a5-4d17-a60d-983bf81bec52.png)
+
+## 상세 페이지의 웹툰 장르(genre) ui 추가하기
+```
+마찬가지로 장르(genre)프로퍼티의 데이터 값 역시도 텍스트로 출력하고 
+설명(about)와 장르(genre) 간 여백을 주고 배치하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216231096-c39403e1-220c-4fa5-9a23-28761e443088.png)
+![image](https://user-images.githubusercontent.com/58906858/216231081-118dbbb6-bdb6-470d-96c5-4deb0efe138b.png)
+
