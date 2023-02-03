@@ -131,7 +131,9 @@ class _DetailScreenState extends State<DetailScreen> {
                                       color:Colors.white,
                                     )
                                   ),
-                                  const Icon(Icons.chevron_right_rounded),
+                                  const Icon(Icons.chevron_right_rounded,
+                                    color:Colors.white,
+                                  ),
                                 ],
                               ),
                             ),
