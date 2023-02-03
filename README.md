@@ -288,3 +288,15 @@ FutureBuilder를 사용해서 webtoon(apiurl/id)의 about 프로퍼티의 데이
 ![image](https://user-images.githubusercontent.com/58906858/216500802-394b676d-d5e1-40d4-bc5e-a34c307638ca.png)
 ![image](https://user-images.githubusercontent.com/58906858/216500784-832e9e93-9fa5-457b-b1cc-fb04e1183d93.png)
 
+## url_launcher 패키지 설치와 설정
+```
+에피소드 버튼을 클릭했을 때 해당하는 회차의 웹툰 웹페이지로 이동시키기 위해서는
+flutter의 url_launcher 라이브러리를 사용해야 합니다.
+flutter pub add url_launcher 명령어를 사용해서 패키지를 설치한 후에
+
+안드로이드라면 다음 코드를 android/main/AndroidManifest.xml 파일에 추가해줍니다.(최상단 root의 바로아래 child)
+scheme에는 sms나 tel 등이 올 수 있지만 https url을 사용하기 때문에 https를 넣어주었습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216502572-1ec4ae0b-4c8c-41f8-b247-f49b3f195846.png)
+
+
