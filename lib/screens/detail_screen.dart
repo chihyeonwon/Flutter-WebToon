@@ -126,11 +126,15 @@ class _DetailScreenState extends State<DetailScreen> {
                               ),
                               child: Row(
                                 children:[
-                                  Text(episode.title),
+                                  Text(episode.title,
+                                    style:const TextStyle(
+                                      color:Colors.white,
+                                    )
+                                  ),
                                   const Icon(Icons.chevron_right_rounded),
-                                ]
+                                ],
                               ),
-                            )
+                            ),
                           )
                       ],
                     );
