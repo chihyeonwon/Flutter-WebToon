@@ -120,7 +120,10 @@ class _DetailScreenState extends State<DetailScreen> {
                                 color: Colors.green.shade300,
                               ),
                               child: Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.symmetric(
+                                  vertical:20,
+                                  horizontal:20,
+                                ),
                                 child: Row(
                                   children:[
                                     Text(episode.title),
