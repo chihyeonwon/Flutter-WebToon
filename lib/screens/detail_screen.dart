@@ -125,6 +125,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                 horizontal:20,
                               ),
                               child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children:[
                                   Text(episode.title,
                                     style:const TextStyle(
