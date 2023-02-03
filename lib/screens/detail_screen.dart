@@ -116,6 +116,7 @@ class _DetailScreenState extends State<DetailScreen> {
                         for(var episode in snapshot.data!)
                           Container(
                             decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
                               color: Colors.green.shade300,
                             ),
                             child: Padding(
