@@ -46,102 +46,98 @@ class _DetailScreenState extends State<DetailScreen> {
         ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 50),
-        child: ListView(
-          children:[
-            Column(
+        child: Column(
+        children: [
+          const SizedBox(
+            height:50,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(
-                height:50,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Hero(
-                    tag:widget.id,
-                    child: Container(
-                        clipBehavior:Clip.hardEdge, // 자식의 부모 영역 침범을 제어
-                        decoration: BoxDecoration(
-                            borderRadius:BorderRadius.circular(20),
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius:15, // 그림자의 범위 지정
-                                offset: const Offset(10, 10), // 그림자의 위치 지정
-                                color:Colors.black.withOpacity(0.5),
-                              )
-                            ]
-                        ),
-                        width:200,
-                        child: Image.network(widget.thumb)
+              Hero(
+                tag:widget.id,
+                child: Container(
+                    clipBehavior:Clip.hardEdge, // 자식의 부모 영역 침범을 제어
+                    decoration: BoxDecoration(
+                        borderRadius:BorderRadius.circular(20),
+                        boxShadow: [
+                          BoxShadow(
+                            blurRadius:15, // 그림자의 범위 지정
+                            offset: const Offset(10, 10), // 그림자의 위치 지정
+                            color:Colors.black.withOpacity(0.5),
+                          )
+                        ]
                     ),
-                  ),
-                ],
+                    width:200,
+                    child: Image.network(widget.thumb)
+                ),
               ),
-              const SizedBox(
-                height:25,
-              ),
-              FutureBuilder(
-                future:webtoon,
-                builder:(context, snapshot) {
-                  if(snapshot.hasData) {
-                    return Column(
-                      crossAxisAlignment:CrossAxisAlignment.center,
-                      children: [
-                        Text(snapshot.data!.about,
-                         style: const TextStyle(
-                           fontSize: 15
-                         ),
-                        ),
-                        const SizedBox(
-                          height: 15,
-                        ),
-                        Text('${snapshot.data!.genre} / ${snapshot.data!.age}',
-                          style: const TextStyle(
-                              fontSize: 15
-                          ),
-                        ),
-                      ],
-                    );
-                  }
-                  return Text("...");
-                }
-              ),
-              const SizedBox(
-                height:25,
-              ),
-              FutureBuilder(
-                  future: episodes,
-                  builder: (context, snapshot) {
-                    if(snapshot.hasData) {
-                      return Column(
-                        children: [
-                          for(var episode in snapshot.data!)
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.green.shade300,
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                  vertical:20,
-                                  horizontal:20,
-                                ),
-                                child: Row(
-                                  children:[
-                                    Text(episode.title),
-                                    const Icon(Icons.chevron_right_rounded),
-                                  ]
-                                ),
-                              )
-                            )
-                        ],
-                      );
-                    }
-                    return Container();
-                  }
-              )
             ],
           ),
-          ],
-        ),
+          const SizedBox(
+            height:25,
+          ),
+          FutureBuilder(
+            future:webtoon,
+            builder:(context, snapshot) {
+              if(snapshot.hasData) {
+                return Column(
+                  crossAxisAlignment:CrossAxisAlignment.center,
+                  children: [
+                    Text(snapshot.data!.about,
+                     style: const TextStyle(
+                       fontSize: 15
+                     ),
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Text('${snapshot.data!.genre} / ${snapshot.data!.age}',
+                      style: const TextStyle(
+                          fontSize: 15
+                      ),
+                    ),
+                  ],
+                );
+              }
+              return Text("...");
+            }
+          ),
+          const SizedBox(
+            height:25,
+          ),
+          FutureBuilder(
+              future: episodes,
+              builder: (context, snapshot) {
+                if(snapshot.hasData) {
+                  return Column(
+                    children: [
+                      for(var episode in snapshot.data!)
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.green.shade300,
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(
+                              vertical:20,
+                              horizontal:20,
+                            ),
+                            child: Row(
+                              children:[
+                                Text(episode.title),
+                                const Icon(Icons.chevron_right_rounded),
+                              ]
+                            ),
+                          )
+                        )
+                    ],
+                  );
+                }
+                return Container();
+              }
+          )
+        ],
+          ),
       )
     );
   }
