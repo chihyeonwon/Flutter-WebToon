@@ -49,9 +49,6 @@ class _DetailScreenState extends State<DetailScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 50),
           child: Column(
           children: [
-            const SizedBox(
-              height:50,
-            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
