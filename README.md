@@ -278,3 +278,13 @@ FutureBuilder를 사용해서 webtoon(apiurl/id)의 about 프로퍼티의 데이
 ![image](https://user-images.githubusercontent.com/58906858/216235477-70897070-0249-4dfb-a4bc-cfd61f2fbcce.png)
 ![image](https://user-images.githubusercontent.com/58906858/216235567-b7f3aedb-c36f-4f32-8273-33fce2042700.png)
 
+## 에피소드 ui 꾸미기
+```
+에피소드 버튼에 색상과 폰트 색상, 여백, 요소들간 배치 등을 추가하여 ui를 꾸몄습니다.
+
+이 전에 전체 위젯을 ListView로 감쌌는 데 SingleChildScrollView가 문제 해결에 더 좋을 것 같아서
+수정하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216500802-394b676d-d5e1-40d4-bc5e-a34c307638ca.png)
+![image](https://user-images.githubusercontent.com/58906858/216500784-832e9e93-9fa5-457b-b1cc-fb04e1183d93.png)
+
