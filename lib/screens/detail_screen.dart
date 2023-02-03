@@ -119,11 +119,14 @@ class _DetailScreenState extends State<DetailScreen> {
                               decoration: BoxDecoration(
                                 color: Colors.green.shade300,
                               ),
-                              child: Row(
-                                children:[
-                                  Text(episode.title),
-                                  const Icon(Icons.chevron_right_rounded),
-                                ]
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  children:[
+                                    Text(episode.title),
+                                    const Icon(Icons.chevron_right_rounded),
+                                  ]
+                                ),
                               )
                             )
                         ],
