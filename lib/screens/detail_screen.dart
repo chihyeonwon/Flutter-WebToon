@@ -128,6 +128,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                   Text(episode.title,
                                     style:const TextStyle(
                                       color:Colors.white,
+                                      fontSize:16,
                                     )
                                   ),
                                   const Icon(Icons.chevron_right_rounded,
