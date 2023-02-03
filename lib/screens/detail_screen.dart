@@ -116,6 +116,9 @@ class _DetailScreenState extends State<DetailScreen> {
                         children: [
                           for(var episode in snapshot.data!)
                             Container(
+                              decoration: BoxDecoration(
+                                color: Colors.green.shade300,
+                              ),
                               child: Row(
                                 children:[
                                   Text(episode.title),
