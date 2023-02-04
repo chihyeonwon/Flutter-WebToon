@@ -7,8 +7,10 @@ class Episode extends StatelessWidget {
   const Episode({
     Key? key,
     required this.episode,
+    required this.webtoonId,
   }) : super(key: key);
 
+  final String webtoonId;
   final WebtoonEpisodeModel episode;
 
   // 에피소드 버튼을 탭했을 때 호출되는 함수
