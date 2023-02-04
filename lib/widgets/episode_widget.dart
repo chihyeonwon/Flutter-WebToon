@@ -15,7 +15,7 @@ class Episode extends StatelessWidget {
 
   // 에피소드 버튼을 탭했을 때 호출되는 함수
   onButtonTap() async {
-    await launchUrlString("https://google.com");
+    await launchUrlString("https://comic.naver.com/webtoon/detail?titleId=${webtoonId}&no=${episode.id}"); // titleId : webtoonId, no : episodeId
   }
 
   @override
