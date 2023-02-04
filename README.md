@@ -299,4 +299,15 @@ scheme에는 sms나 tel 등이 올 수 있지만 https url을 사용하기 때�
 ```
 ![image](https://user-images.githubusercontent.com/58906858/216502572-1ec4ae0b-4c8c-41f8-b247-f49b3f195846.png)
 
+## 에피소드 버튼을 생성하는 부분을 리팩토링(Extract Widget)
+```
+에피소드 버튼을 생성하는 부분을 Refactoring 합니다.
+안드로이드 스튜디오의 Extract Flutter Widget(플러터 위젯으로 추출하기) 기능을 사용하여 이름이 Episode인 
+Episode widget을 생성합니다.
+
+```
+![image](https://user-images.githubusercontent.com/58906858/216745551-f98ea110-4963-45cd-9060-aff54daa2425.png)
+![image](https://user-images.githubusercontent.com/58906858/216745562-c4fb2313-cc47-4cfa-9809-b6380eca214d.png)
+
+
 
