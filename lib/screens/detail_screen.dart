@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 import '../models/webtoon_detail_model.dart';
 import '../models/webtoon_episode_model.dart';
@@ -28,6 +29,11 @@ class _DetailScreenState extends State<DetailScreen> {
     super.initState();
     webtoon = ApiService.getToonById(widget.id);
     episodes = ApiService.getLatestEpisodesById(widget.id);
+  }
+
+  // 에피소드 버튼을 탭했을 때 호출되는 함수
+  onButtonTap() async {
+    await launchUrlString("https://google.com");
   }
 
   @override
