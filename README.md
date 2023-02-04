@@ -334,4 +334,11 @@ webtoon의 Id 값은 detail_screen.dart파일에서 생성자로 넘겨주어야
 ### 에피소드 버튼을 눌렀을 때 해당하는 회차의 웹툰 사이트로 바로 연결해주어 웹툰을 볼 수 있게 함
 ![image](https://user-images.githubusercontent.com/58906858/216746645-699a3979-6793-4d39-8009-51ecd04ab8fc.png)
 
+## AppBar에 좋아요 버튼 기능 추가
+```
+하트를 눌렀을 때 하트가 채워지면서 좋아요를 뜻하는 기능을 구현하고자 하였습니다.
+먼저 detail_screen의 AppBar의 actions 프로퍼티에 onTap 함수와 빈 하트 아이콘을 추가하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216746953-86f12978-7c39-4ace-9b29-cba06319a702.png)
+![image](https://user-images.githubusercontent.com/58906858/216746956-b53a1bb0-a0d3-4df4-9fcf-20d7d61fd201.png)
 
