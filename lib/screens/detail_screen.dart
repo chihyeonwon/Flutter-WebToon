@@ -31,10 +31,7 @@ class _DetailScreenState extends State<DetailScreen> {
     episodes = ApiService.getLatestEpisodesById(widget.id);
   }
 
-  // 에피소드 버튼을 탭했을 때 호출되는 함수
-  onButtonTap() async {
-    await launchUrlString("https://google.com");
-  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -139,6 +136,11 @@ class Episode extends StatelessWidget {
   }) : super(key: key);
 
   final WebtoonEpisodeModel episode;
+
+  // 에피소드 버튼을 탭했을 때 호출되는 함수
+  onButtonTap() async {
+    await launchUrlString("https://google.com");
+  }
 
   @override
   Widget build(BuildContext context) {
