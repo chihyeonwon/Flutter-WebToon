@@ -309,5 +309,29 @@ Episode widget을 생성합니다.
 ![image](https://user-images.githubusercontent.com/58906858/216745551-f98ea110-4963-45cd-9060-aff54daa2425.png)
 ![image](https://user-images.githubusercontent.com/58906858/216745562-c4fb2313-cc47-4cfa-9809-b6380eca214d.png)
 
+## url_launcher를 사용해서 에피소드 버튼 기능 구현
+```
+에피소드 버튼을 누르면 해당하는 웹툰 회차의 네이버 웹툰 사이트로 이동하게끔하는 기능을 추가해야합니다.
+웹툰 사이트 url은 https://comic.naver.com/webtoon/detail?titleId=${webtoonId}&no=${episode.id}
+즉 titleId에 웹툰의 id값이 no에 에피소드의 id값이 필요합니다.
+epsiode의 Id 값은 webtoonEpisodeModel의 생성자에서 id를 얻어올 수 있고
+webtoon의 Id 값은 detail_screen.dart파일에서 생성자로 넘겨주어야 합니다.
+
+이렇게 받아온 webtoonId와 episodeId를 문자열 바인딩을 사용해서 url을 완성시켜줍니다.
+
+각 에피소드 버튼에 GestureDetector를 생성하고 클릭하면 해당하는 웹툰 회차의 네이버 웹툰으로
+이동하는 기능을 구현하였습니다.
+```
+### [deatil.screen.dart 파일에서 webtoonId 값을 넘겨준다.]
+![image](https://user-images.githubusercontent.com/58906858/216746553-06288eae-59f9-4d4b-9aab-4cba04989cbe.png)
+
+### [webtoonId값을 생성자로 받아와서 사용한다.]
+![image](https://user-images.githubusercontent.com/58906858/216746546-2ffff96b-68cf-4ca3-8dc9-aa1eeecc579c.png)
+
+### 받아온 webtoonId와 episodeId를 문자열 바인딩을 사용해서 url 생성
+![image](https://user-images.githubusercontent.com/58906858/216746613-c39eabb7-963e-45ae-96dc-f2d2caaf1879.png)
+
+### 에피소드 버튼을 눌렀을 때 해당하는 회차의 웹툰 사이트로 바로 연결해주어 웹툰을 볼 수 있게 함
+![image](https://user-images.githubusercontent.com/58906858/216746645-699a3979-6793-4d39-8009-51ecd04ab8fc.png)
 
 
