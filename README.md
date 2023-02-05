@@ -7,6 +7,13 @@
 개발자 : Won Chi Hyeon
 ```
 
+## 사용한 패키지
+```
+https
+url_launcher
+shared_preferences
+```
+
 ## AppBar 생성
 ```
 screens 폴더 안에 화면의 위젯들을 보여주는 home_screen.dart 파일을 만들고 그 안에 위젯들을 배치하였습니다.
