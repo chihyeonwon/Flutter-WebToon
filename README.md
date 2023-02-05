@@ -342,3 +342,10 @@ webtoon의 Id 값은 detail_screen.dart파일에서 생성자로 넘겨주어야
 ![image](https://user-images.githubusercontent.com/58906858/216746953-86f12978-7c39-4ace-9b29-cba06319a702.png)
 ![image](https://user-images.githubusercontent.com/58906858/216746956-b53a1bb0-a0d3-4df4-9fcf-20d7d61fd201.png)
 
+## shared_preferences 패키지 설치
+```
+핸드폰 저장소에 좋아요 버튼에 대한 정보를 저장할 필요가 있습니다.
+저번에는 eqlite를 사용하여 개인 데이터베이스에 접근하였지만 이번에는 shared_preferences 라이브러리를 설치하여 사용하였습니다.
+flutter pub add shared_preferences 명령어로 shared_preferences 라이브러리를 설치하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216798665-4522054e-8f09-4b5d-b09a-7f45952be023.png)
