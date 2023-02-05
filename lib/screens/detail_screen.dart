@@ -47,6 +47,12 @@ class _DetailScreenState extends State<DetailScreen> {
           widget.title,
           style:const TextStyle(fontSize:24,),
         ),
+          actions:[
+            IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.favorite_outline_outlined),
+            ),
+          ],
         ),
       body: SingleChildScrollView(
         child: Padding(
