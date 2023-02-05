@@ -34,7 +34,9 @@ class _DetailScreenState extends State<DetailScreen> {
     final likedToons = prefs.getStringList('likedToons'); // Tring read Data in likedToons
     if(likedToons != null) {
       if(likedToons.contains(widget.id) == true) { // 웹툰의 id를 가지고 있다면
-        isLiked = true; // 좋아요 true
+        setState(() {
+          isLiked = true;
+        }); // 좋아요 true
       }
     } else {
       prefs.setStringList('likedToons', []); // write Data in likedToons
@@ -47,6 +49,21 @@ class _DetailScreenState extends State<DetailScreen> {
     webtoon = ApiService.getToonById(widget.id);
     episodes = ApiService.getLatestEpisodesById(widget.id);
     initPrefs();
+  }
+
+  onHeartTap() async {
+    final likedToons = prefs.getStringList('likedToons');
+    if(likedToons != null) {
+      if(isLiked) {
+        likedToons.remove(widget.id); // 이미 좋아요 누른 상태라면 좋아요 삭제
+      } else{
+        likedToons.add(widget.id); // 좋아요가 아니라면 좋아요 추가
+      }
+      await prefs.setStringList('likedToons', likedToons);
+      setState(() {
+        isLiked = !isLiked;
+      });
+    }
   }
 
 
@@ -66,8 +83,8 @@ class _DetailScreenState extends State<DetailScreen> {
         ),
           actions:[
             IconButton(
-                onPressed: () {},
-                icon: Icon(isLiked ? Icons.favorite : Icons.favorite_outlined,),
+                onPressed: onHeartTap,
+                icon: Icon(isLiked ? Icons.favorite : Icons.favorite_outline),
             ),
           ],
         ),
