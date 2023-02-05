@@ -369,3 +369,11 @@ likedToons는 웹툰 id 리스트를 읽어서 likedToons에 저장하고 (getSt
 웹툰 id 리스트에 데이터가 있고 웹툰 id를 포함한다면 (contains) isLiked 좋아요 버튼의 상태를 true로 변경합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/216799130-a8b37304-4635-456e-9c96-b09fc1ec34c5.png)
+
+## bool 값 (좋아요 버튼의 상태)에 따라 리스트 변경하기
+```
+버튼 메서드 onHeartTap를 생성하고 좋아요 버튼이 이미 true 눌러져있다면 
+리스트에서 해당하는 웹툰id를 제거하고 false 눌러져있지않다면 리스트에 해당하는 웹툰 id를 추가하는
+로직을 추가하였습니다. 리스트를 로직에 의해 생성된 리스트로 새로 초기화해줍니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216799577-8099cf67-56bf-4746-894d-e44867d67e35.png)
