@@ -349,3 +349,15 @@ webtoon의 Id 값은 detail_screen.dart파일에서 생성자로 넘겨주어야
 flutter pub add shared_preferences 명령어로 shared_preferences 라이브러리를 설치하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/216798665-4522054e-8f09-4b5d-b09a-7f45952be023.png)
+
+## shared_preferences를 사용하여 저장소와 연결하기
+[shared_preferences 개발문서](https://pub.dev/packages/shared_preferences)
+```
+shared_preferences의 개발문서에 따르면 getInstance() 한 줄 만으로 저장소와 연결하여
+저장소에 다양한 타입의 데이터를 ('key', value)의 형태로 write 저장할 수 있다고 합니다.
+
+사용자의 저장소와 프로젝트를 연결하기 위해서 getInstance() 메서드를 initPrefs() 메서드에서 
+비동기적으로 호출하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216798833-25a31a4c-66e2-4fb7-b5cd-99bb54d73d14.png)
+![image](https://user-images.githubusercontent.com/58906858/216798865-1006611b-f102-44c4-a805-27b44b33f3ef.png)
