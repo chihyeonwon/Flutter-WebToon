@@ -14,6 +14,20 @@ url_launcher
 shared_preferences
 ```
 
+## 최종 화면 및 기능 소개
+
+### [메인 페이지 : 요일에 따라 변경되는 웹툰 리스트를 확인할 수 있습니다.]
+![image](https://user-images.githubusercontent.com/58906858/216799853-3e2ad17e-6ecf-4e66-9637-1e61ac34e807.png)
+### [상세 페이지 : 웹툰에 대한 상세 페이지를 보여주는 화면으로 줄거리, 장르, 이용 연령대, 에피소드회차 바로가기 기능이 있습니다.]
+![image](https://user-images.githubusercontent.com/58906858/216799864-e4efceeb-c565-495c-957e-9464c5f3426c.png)
+### [에피소드 회차를 클릭하면 해당하는 회차의 웹툰을 바로 볼 수 있습니다.]
+![image](https://user-images.githubusercontent.com/58906858/216799888-707b0fc6-c802-40e8-953d-554d82c35380.png)
+### 웹툰 좋아요 기능(좋아요를 누르기 전)
+![image](https://user-images.githubusercontent.com/58906858/216799910-e9069784-ea7b-42eb-8bfc-63569531fdac.png)
+### 웹툰 좋아요 기능(좋아요를 누른 후)
+![image](https://user-images.githubusercontent.com/58906858/216799920-2c3fb433-d500-4c81-a649-0f1a65354dca.png)
+
+
 ## AppBar 생성
 ```
 screens 폴더 안에 화면의 위젯들을 보여주는 home_screen.dart 파일을 만들고 그 안에 위젯들을 배치하였습니다.
