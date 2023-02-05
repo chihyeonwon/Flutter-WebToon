@@ -361,3 +361,11 @@ shared_preferences의 개발문서에 따르면 getInstance() 한 줄 만으로 
 ```
 ![image](https://user-images.githubusercontent.com/58906858/216798833-25a31a4c-66e2-4fb7-b5cd-99bb54d73d14.png)
 ![image](https://user-images.githubusercontent.com/58906858/216798865-1006611b-f102-44c4-a805-27b44b33f3ef.png)
+
+## 저장소의 데이터 유무에 따라서 bool 값(좋아요 버튼의 상태) 변경하기
+```
+likedToons는 웹툰 id 리스트를 읽어서 likedToons에 저장하고 (getStringList)
+웹툰 id 리스트의 데이터가 없다면 빈 리스트를 likedToons에 저장합니다.
+웹툰 id 리스트에 데이터가 있고 웹툰 id를 포함한다면 (contains) isLiked 좋아요 버튼의 상태를 true로 변경합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216799130-a8b37304-4635-456e-9c96-b09fc1ec34c5.png)
