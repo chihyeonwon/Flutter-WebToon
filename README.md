@@ -377,3 +377,20 @@ likedToons는 웹툰 id 리스트를 읽어서 likedToons에 저장하고 (getSt
 로직을 추가하였습니다. 리스트를 로직에 의해 생성된 리스트로 새로 초기화해줍니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/216799577-8099cf67-56bf-4746-894d-e44867d67e35.png)
+
+## 좋아요 버튼 기능 구현 (최종)
+```
+버튼에 생성한 onHeartTap 함수를 호출하도록하고 좋아요 버튼이 잘 작동하나 테스트하였습니다.
+좋아요 버튼을 맨 처음 눌렀을 때는 빈 하트가 채워진 하트로 변경되고
+채워진 하트를 눌렀을 때는 빈 하트로 잘 변경되는 것을 알 수 있었습니다.
+
+또한 이러한 bool, List 값은 사용자의 디바이스 데이터베이스에 저장되므로 
+rebuilding했을 때도 데이터가 사라지지 않고 똑같이 작동하는 것을 확인하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216799591-4487c24d-52a7-487a-a66d-7240507218f4.png)
+
+### [좋아요 버튼을 누르기 전]
+![image](https://user-images.githubusercontent.com/58906858/216799654-f1a2565d-f4e7-4926-969a-42d96abe8067.png)
+
+### [좋아요 버튼을 눌렀을 때]
+![image](https://user-images.githubusercontent.com/58906858/216799664-d735f388-f72a-4dc8-aeb0-5e0053b66b04.png)
