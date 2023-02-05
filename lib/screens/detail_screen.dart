@@ -26,9 +26,19 @@ class _DetailScreenState extends State<DetailScreen> {
   late Future<WebtoonDetailModel> webtoon;
   late Future<List<WebtoonEpisodeModel>> episodes;
   late SharedPreferences prefs;
+  bool isLiked = false; // 좋아요 false로 선언
 
   Future initPrefs() async {
     prefs = await SharedPreferences.getInstance(); // 사용자의 저장소에 connection
+
+    final likedToons = prefs.getStringList('likedToons'); // Tring read Data in likedToons
+    if(likedToons != null) {
+      if(likedToons.contains(widget.id) == true) { // 웹툰의 id를 가지고 있다면
+        isLiked = true; // 좋아요 true
+      }
+    } else {
+      prefs.setStringList('likedToons', []); // write Data in likedToons
+    }
   }
 
   @override
@@ -57,7 +67,7 @@ class _DetailScreenState extends State<DetailScreen> {
           actions:[
             IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.favorite_outline_outlined),
+                icon: Icon(isLiked ? Icons.favorite : Icons.favorite_outlined,),
             ),
           ],
         ),
