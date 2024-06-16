@@ -1,3 +1,8 @@
+## 구글 플레이스토어에서 웹툰관 앱을 다운로드하세요 !
+[웹툰관 앱 링크](https://play.google.com/store/apps/details?id=com.wonchihyeon.webtoongwan)
+![image](https://github.com/chihyeonwon/Flutter-WebToon/assets/58906858/6e62f22c-0fa0-4956-8867-1478b900d947)
+
+
 # TodayWebToon (오늘의 웹툰 앱 프로젝트)
 
 ```
